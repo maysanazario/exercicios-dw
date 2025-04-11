@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatinhos - 3 Formas CSS</title>
+    
+    <!-- CSS Externo (arquivo externo.css) -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- CSS Interno (dentro do <style>) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        
+        .interno {
+            background-color: #e6e6fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS Inline (direto na tag) -->
+    <header style="background-color: #d8bfd8; padding: 20px; text-align: center;">
+        <h1 style="color: #4b0082; margin: 0;">🐱 Gatinhos Fofos 🐱</h1>
+    </header>
+
+    <main style="max-width: 800px; margin: 20px auto; padding: 0 15px;">
+        <!-- Seção com CSS Inline -->
+        <section style="background-color: #fff; padding: 15px; margin-bottom: 15px; border-radius: 5px;">
+            <h2 style="color: #9370db;">CSS Inline</h2>
+            <img src="" alt="Gatinho" style="width: 100%; border-radius: 5px;">
+            <p style="color: #666;">Estilos aplicados diretamente nas tags usando o atributo style.</p>
+        </section>
+        
+        <!-- Seção com CSS Interno -->
+        <section class="interno">
+            <h2>CSS Interno</h2>
+            <img src="" alt="Gatinho" class="img-interno">
+            <p>Estilos definidos na seção &lt;style&gt; dentro do &lt;head&gt;.</p>
+        </section>
+        
+        <!-- Seção com CSS Externo -->
+        <section class="externo">
+            <h2>CSS Externo</h2>
+            <img src="">
+            <p>Estilos carregados de um arquivo .css separado.</p>
+        </section>
+    </main>
+
+    <footer style="background-color: #d8bfd8; text-align: center; padding: 10px; margin-top: 20px;">
+        <p style="color: #4b0082;">Trabalho CSS</p>
+    </footer>
+</body>
+</html>
